@@ -1,0 +1,37 @@
+#include <iostream>
+
+long double sum(long double n) {
+
+	if (n == 0) {
+
+		return 1;
+	}
+	else {
+
+		return n + sum(n - 1);
+	}
+}
+
+int main() {
+
+	std::ios_base::sync_with_stdio(0);
+	setlocale(LC_ALL, "ru");
+
+	long double n;
+
+	std::cout << "Введите количество купленных удлинителей: ";
+	std::cin >> n;
+
+	while (std::cin.fail() || std::cin.peek() != '\n' || n < 0 || (long long int)n != n) {
+
+		std::cin.clear();
+		std::cin.ignore(99999, '\n');
+
+		std::cout << "\nВы ввели неверное значение, попробуйте ввести целое положительное число: ";
+		std::cin >> n;
+	}
+
+	std::cout << "Если Миша оптимально соединит " << n << " удлинителей, у него получится " << sum(n - 1) << " розеток.\n";
+
+	return 0;
+}
