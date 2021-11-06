@@ -1,3 +1,9 @@
+//Лабораторная 4, задача 9. Выполнена: Киселёв А.В 153504
+
+/*В качестве входных данных поступают две целочисленные
+матрицы A и B, которые имеют размер N и соответственно. Требуется найти
+произведение матриц A*B. Выделение памяти через функции языка С.*/
+
 #include <iostream>
 #include <iomanip>
 
@@ -6,6 +12,8 @@ int main() {
 	setlocale(LC_ALL, "ru");
 
 	long double N;
+
+	std::cout << "\tДанный код находит произведение двух заданных матриц\n\n";
 
 	std::cout << "Введите размер матриц А и В: ";
 	std::cin >> N;
@@ -66,7 +74,9 @@ int main() {
 		}
 	}
 
-	std::cout << std::endl;
+	system("cls");
+
+	std::cout << "Матрица А: \n\n";
 
 	for (int i = 0; i < n; i++) {
 
@@ -78,8 +88,7 @@ int main() {
 		std::cout << std::endl;
 	}
 
-	std::cout << std::endl;
-	std::cout << std::endl;
+	std::cout << "\n\nМатрица B: \n\n";
 
 	for (int i = 0; i < n; i++) {
 
@@ -102,8 +111,7 @@ int main() {
 		}
 	}
 
-	std::cout << std::endl;
-	std::cout << std::endl;
+	std::cout << "\n\nМатрица АxB: \n\n";
 
 	for (int i = 0; i < n; i++) {
 
@@ -118,5 +126,6 @@ int main() {
 	free(arrA);
 	free(arrB);
 	free(arrC);
+
 	return 0;
 }
