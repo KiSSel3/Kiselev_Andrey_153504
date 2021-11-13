@@ -22,7 +22,7 @@ int main() {
 	std::cout << "Введите размер квадратной матрицы N: ";
 	std::cin >> N;
 
-	while (std::cin.fail() || std::cin.peek() != '\n' || N <= 1 || (long long int)N != N) {
+	while (std::cin.fail() || std::cin.peek() != '\n' || N <= 0 || (long long int)N != N) {
 
 		std::cin.clear();
 		std::cin.ignore(99999, '\n');
@@ -73,14 +73,17 @@ int main() {
 		std::cout << std::endl;
 	}
 
-	for (int i = 0; i < N; i++) {
+	//произведение строк
+	for (int i = 0; i < N-1; i++) {
 
-		for (int j = 0; j < N - 1; j++) {
+		for (int j = 0; j < N; j++) {
 
-			s1 += arr[i][j] * arr[i][j + 1];
+			s1 += arr[i][j] * arr[i + 1][j];
 		}
 	}
 
+
+	//произведение строки
 	for (int j = 0; j < N; j++) {
 
 		for (int i = 0; i < N; i++) {
@@ -89,7 +92,7 @@ int main() {
 		}
 	}
 
-	if (s1 == 0 && s2 == 3) {
+	if (s1 == 0 && s2 == N) {
 
 		std::cout << "Заданная матрица является ортонормированной!\n";
 	}

@@ -11,14 +11,12 @@
 
 int main() {
 
+	std::ios_base::sync_with_stdio(0);
 	setlocale(LC_ALL, "ru");
 	srand(time(NULL));
-	std::ios_base::sync_with_stdio(0);
 
 	long double n, m;
 	char symbol, number = 49;
-
-	char arrnum[] = { 49,50,51,52,53,54,55,56 };
 
 	std::cout << "\tМакет игры \"Сапёр\"\n\n";
 

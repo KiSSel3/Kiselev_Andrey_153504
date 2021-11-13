@@ -52,7 +52,7 @@ int main() {
 
 				std::cin >> arr[i][j][g];
 
-				while (std::cin.fail() || std::cin.peek() != '\n' || arr[i][j][g] <= 0 || (long long int)arr[i][j][g] != arr[i][j][g]) {
+				while (std::cin.fail() || std::cin.peek() != '\n'|| (long long int)arr[i][j][g] != arr[i][j][g]) {
 
 					std::cin.clear();
 					std::cin.ignore(99999, '\n');
@@ -89,6 +89,18 @@ int main() {
 	max = (max1 > max2) ? max1 : max2;
 
 	std::cout << "Наибольшая диагональ равняется " << max << ". \n";
+
+	for (int i = 0; i < size; i++) {
+
+		for (int j = 0; j < size; j++) {
+
+			delete[] arr[i][j];
+		}
+
+		delete[] arr[i];
+	}
+
+	delete[] arr;
 
 	return 0;
 }

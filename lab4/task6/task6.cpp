@@ -10,7 +10,7 @@
 
 long double inputCheck(long double& x) {
 
-	while (std::cin.fail() || std::cin.peek() != '\n' || x <= 1 || (long long int)x != x) {
+	while (std::cin.fail() || std::cin.peek() != '\n' || x <= 0 || (long long int)x != x) {
 
 		std::cin.clear();
 		std::cin.ignore(99999, '\n');
@@ -42,6 +42,7 @@ int main() {
 
 	setlocale(LC_ALL, "ru");
 	std::ios_base::sync_with_stdio(0);
+
 	long double n, m;
 	int max;
 

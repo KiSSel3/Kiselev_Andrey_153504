@@ -19,7 +19,7 @@ int main() {
 	std::cout << "¬ведите количество элементов массива: ";
 	std::cin >> size;
 
-	while (std::cin.fail() || std::cin.peek() != '\n' || size <= 0 || size > 99 || (long long int)size != size) {
+	while (std::cin.fail() || std::cin.peek() != '\n'|| (long long int)size != size) {
 
 		std::cin.clear();
 		std::cin.ignore(99999, '\n');
@@ -63,22 +63,6 @@ int main() {
 }
 
 void remove(int* arr, long double &size) {
-
-	int duplicates = 0;
-
-	for (int i = size-1; i >= 0; i--) {
-
-		for (int j = i + 1; j < size-1; j++) {
-
-			if (arr[i] == arr[j]) {
-
-				duplicates++;
-				break;
-			}
-		}
-	}
-
-	int size2 = size - duplicates;
 
 	int* arr2 = new int[size];
 
