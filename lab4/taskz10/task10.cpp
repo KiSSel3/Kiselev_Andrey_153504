@@ -5,10 +5,14 @@
 
 #include <iostream>
 #include <iomanip>
+#include <ctime>
 
 #define ll long long int
 
 int main() {
+    clock_t start, stop;
+
+    start = clock();
 
     std::ios_base::sync_with_stdio(0);
     setlocale(LC_ALL, "ru");
@@ -368,6 +372,10 @@ int main() {
         square1[0][0] = square3[0][0];
         square3[0][0] = ret;
 
+        ret = square1[size - 1][0];
+        square1[size - 1][0] = square3[size - 1][0];
+        square3[size - 1][0] = ret;
+
         ll y = 1;
 
         while (y < size - 1) {
@@ -453,11 +461,11 @@ int main() {
 
                 if (n < 100) {
 
-                    std::cout << std::setw(4) << msquare[i][j] << " ";
+                    std::cout << std::setw(8) << msquare[i][j];
                 }
                 else {
 
-                    std::cout << std::setw(10) << msquare[i][j] << " ";
+                    std::cout << std::setw(8) << msquare[i][j];
                 }
             }
 
@@ -466,6 +474,10 @@ int main() {
 
 
     }
+
+    stop = clock();
+
+    std::cout << "\n\n\n" << (stop - start) /  CLK_TCK << '\n';
 
     for (ll i = 0; i < n; i++) {
 

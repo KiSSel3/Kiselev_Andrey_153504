@@ -40,9 +40,9 @@ int main() {
 
 	min = arr[0][0];
 
-	for (int i = 0, g = 1; i < LENGTH - 1; i++, g++) {
+	for (int i = 0, g = 0; i < LENGTH - 1; i++, g++) {
 
-		for (int j = 0; j < WIDTH + g; j++) {
+		for (int j = g; j < WIDTH; j++) {
 
 			if (arr[i][j] < min) min = arr[i][j];
 		}

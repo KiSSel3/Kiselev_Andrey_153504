@@ -36,18 +36,18 @@ int main() {
 
 	std::cout << std::endl;
 
-	int** arr = new int* [n];
+	long double ** arr = new long double* [n];
 
 	for (int i = 0; i < n; i++) {
 
-		arr[i] = new int[n];
+		arr[i] = new long double[n];
 	}
 
-	int** arr1 = new int* [n];
+	long double** arr1 = new long double* [n];
 
 	for (int i = 0; i < n; i++) {
 
-		arr1[i] = new int[n];
+		arr1[i] = new long double[n];
 	}
 
 	for (int i = 0; i < n; i++) {
