@@ -1,6 +1,13 @@
-#include <iostream>
+//Лабораторная 5, задача 2. Выполнена: Киселёв А.В 153504
 
-long long int count1 = 0, count2 = 0, index = 0;
+/*Вар 8:
+Для заданного одномерного массива X из N элементов проверить, что для всех
+элементов массива выполняется условие cos Xi > 0. Рекурсивную функцию применять
+каждый раз отдельно для первой трети массива и для остальной части (2/3) массива.
+Рекурсивные вызовы заканчивать, когда останется только один или два элемента.*/
+
+
+#include <iostream>
 
 void validation(long double& x) {
 
@@ -28,78 +35,51 @@ void arr_validation(double x) {
 	}
 	std::cout << std::endl;
 	return;
-}
+}  
 
-/*long double recursion(long double x[], long long int size) {
+void recursion(long double mas[], long long int &N,long long int end) {
 
-	if (cos(x[size]) > 0 && size > 0) {
-
-		count1++;
-		return recursion(x, size - 1);
+	if (cos(mas[N]) > 0) std::cout << N + 1 << "-й элемент массива удовлетворяет условию\n";
+	if (N == end) {
+		N++;
+		return;
 	}
-	else if (size > 0) {
 
-		return  recursion(x, size - 1);
-	}
-	else {
-
-		return count1;
-	}
-}
-
-long double recursion(long double x[], long long int size,long long y) {
-
-	if (cos(x[size]) > 0 && size > y) {
-
-		count2++;
-		return recursion(x, size - 1);
-	}
-	else if (size > 0) {
-
-		return  recursion(x, size - 1);
-	}
-	else {
-
-		return count2;
-	}
-}*/
-
-long double recursion(long double x[], long long int size) {
-
-	if (cos(x[index]) > 0 && index < size) {
-
-		count1++;
-		return recursion(x, index++);
-	}
-	else if (index < size) {
-
-		return recursion(x, index++);
-	}
-	else return count1;
+	recursion(mas, ++N, end);
 }
 
 int main() {
 
 	setlocale(LC_ALL, "ru");
 	std::ios_base::sync_with_stdio(0);
-
+	
 	long double n;
 
 	std::cout << "Введите размер массива: ";
 	std::cin >> n;
 	validation(n);
-	
+
 	long double* X = new long double[n];
 
 	std::cout << "\nЗаполните массив:\n";
-	for (long long int i = 0, g = 1; i < n; i++,g++) {
+	for (long long int i = 0, g = 1; i < n; i++, g++) {
 
 		std::cout << g << ": ";
 		std::cin >> X[i];
 		arr_validation(X[i]);
 	}
 
-	std::cout << "Условие выполняется для " << recursion(X, n)/*+ recursion(X, n, ((n - 1) / 3) - 1)*/ << " элементов массива!";
+	long long int N = 0;
+
+	if (long long int(n / 3) != 1)  recursion(X, N, n / 3 - 1);
+	else  if (cos(X[N]) > 0) std::cout << ++N << "-й элемент массива удовлетворяет условию\n";
+
+
+	recursion(X, N, n - 2);//-2 т.к последний элемент не обрабатывается
+
+	if (cos(X[N]) > 0) std::cout << N + 1 << "-й элемент массива удовлетворяет условию\n";
+
+	delete X;
 
 	return 0;
 }

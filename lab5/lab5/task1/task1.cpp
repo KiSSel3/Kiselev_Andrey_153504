@@ -1,6 +1,13 @@
 //Лабораторная 5, задача 1. Выполнена: Киселёв А.В 153504
 
+/*Вар 8:
+Составить программу для нахождения наименьшего элемента одномерного
+динамического массива S = (S1, S2, …, Sm), где каждый элемент Sj вычислить по формуле S+=Aij(if i <=n)
+Использовать функции.
+Размерность массивов n = 3, m = 4 ввести с клавиатуры.*/
+
 #include <iostream>
+#include <Windows.h>
 
 void validation(double& x) {
 
@@ -40,22 +47,13 @@ void arr_output(long double S[], long long int size) {
 	}
 }
 
-long double min(long double S[], long long int size) {
-
-	long double m = S[0];
-
-	for (long long int i = 0; i < size; i++) {
-
-		if (S[i] < m) {
-
-			m = S[i];
-		}
-	}
-
-	return m;
-}
-
 int main() {
+
+	HINSTANCE load;
+	load = LoadLibrary(L"dinlib.dll");
+	typedef long double (*min) (long double S[], long long int size);
+	min Min;
+	Min = (min)GetProcAddress(load, "Min");
 
 	setlocale(LC_ALL, "ru");
 	std::ios_base::sync_with_stdio(0);
@@ -104,7 +102,7 @@ int main() {
 
 	arr_output(S, size);
 
-	std::cout << "\nНаименьший элемент данного массива равняется " << min(S, size) << std::endl;
+	std::cout << "\nНаименьший элемент данного массива равняется " << Min(S, size) << std::endl;
 
 
 	for (int i = 0; i < n; i++) {
@@ -114,6 +112,7 @@ int main() {
 
 	delete[] arr;
 
+	FreeLibrary(load);
 
 	return 0;
 }

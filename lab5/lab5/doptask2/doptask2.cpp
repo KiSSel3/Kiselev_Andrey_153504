@@ -1,10 +1,33 @@
+//Лабораторная 5, задача Доп 2. Выполнена: Киселёв А.В 153504
+
+/*Написать рекурсивную функцию возведения в степень по модулю
+
+Входные данные
+Каждая строка содержит три целых числа: k (0 < k < 1019), n (0 < n < 1019) и t (0 < t < 10).
+Последняя строка содержит три нуля и не обрабатывается.
+Выходные данные
+Для каждого теста в отдельной строке вывести номер теста и значение x. Формат вывода
+приведен в примере.
+Входные данные
+1234 1234 4
+2323 99999999999 8
+4 99999 9
+888 888 8
+0 0 0
+Выходные данные
+Case #1: 736
+Case #2: 39087387
+Case #3: 494777344
+Case #4: 91255296  */
+
+
 #include <iostream>
 #include <staticlib.h>
 
 unsigned long long int F(unsigned long long int x, unsigned long long int y, unsigned long long int z) {
 
 	if (y == 0) return 1;
-	else if (y & 1)return x * F(x * x % z, y / 2, z) % z;
+	else if (y % 2)return x * F(x * x % z, y / 2, z) % z;
 	else return F(x * x % z, y / 2, z);
 }
 
@@ -68,7 +91,7 @@ int main() {
 
 	for (unsigned long long int i = 0, j = 0; i < size - 3; i += 3,j++) {
 
-		m = pow(10, arr[i + 2]);
+		m = pow(10, arr[i + 2]);//функция статик либ 
 		unsigned long long int l = arr[i] % m;
 		result[j] = F(l, arr[i + 1], m);
 	}

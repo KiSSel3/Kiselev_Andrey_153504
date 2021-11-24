@@ -1,3 +1,14 @@
+//Лабораторная 5, задача Доп 1. Выполнена: Киселёв А.В 153504
+
+/*Определим следующую рекурсивную функцию F(n):
+ 
+		n%10 , if (n%10>0)
+F(n) =  0,	   if n =0 
+		F(n/10), Otherwise
+		
+S(p,q) +=F(i)  ---(if (i == p >q)
+По заданным p и q необходимо вычислить S (p, q).*/
+
 #include <iostream>
 
 void validation(long long int& x, long long int& y) {
