@@ -87,9 +87,9 @@ int main() {
 
 	unsigned long long int m = 0;
 
-	unsigned long long int* result = new unsigned long long int [size / 3 -1];
+	unsigned long long int* result = new unsigned long long int[size / 3 - 1];
 
-	for (unsigned long long int i = 0, j = 0; i < size - 3; i += 3,j++) {
+	for (unsigned long long int i = 0, j = 0; i < size - 3; i += 3, j++) {
 
 		m = pow(10, arr[i + 2]);//функция статик либ 
 		unsigned long long int l = arr[i] % m;
@@ -98,7 +98,7 @@ int main() {
 
 	std::cout << "\n\nРезультат:\n";
 
-	for (unsigned long long int i = 0, g = 1; i < size / 3 - 1; i++,g++) {
+	for (unsigned long long int i = 0, g = 1; i < size / 3 - 1; i++, g++) {
 
 		std::cout << "Case #" << g << ": " << result[i] << std::endl;
 	}

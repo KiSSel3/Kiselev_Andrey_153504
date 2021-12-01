@@ -71,13 +71,17 @@ int main() {
 
 	long long int N = 0;
 
-	if (long long int(n / 3) != 1)  recursion(X, N, n / 3 - 1);
+	if (long long int(n / 3) != 1 && n!=1)  recursion(X, N, n / 3 - 1);
 	else  if (cos(X[N]) > 0) std::cout << ++N << "-й элемент массива удовлетворяет условию\n";
 
+	if (n>3) {
+		recursion(X, N, n - 2);//-2 т.к последний элемент не обрабатывается
+	}
+	
+	//std::cout << std::endl << cos(5646564654) << std::endl;
 
-	recursion(X, N, n - 2);//-2 т.к последний элемент не обрабатывается
 
-	if (cos(X[N]) > 0) std::cout << N + 1 << "-й элемент массива удовлетворяет условию\n";
+	if (cos(X[N]) > 0&&n!=1) std::cout << N + 1 << "-й элемент массива удовлетворяет условию\n";
 
 	delete X;
 

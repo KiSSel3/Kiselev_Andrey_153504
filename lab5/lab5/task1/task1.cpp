@@ -48,13 +48,7 @@ void arr_output(long double S[], long long int size) {
 }
 
 int main() {
-
-	HINSTANCE load;
-	load = LoadLibrary(L"dinlib.dll");
-	typedef long double (*min) (long double S[], long long int size);
-	min Min;
-	Min = (min)GetProcAddress(load, "Min");
-
+	
 	setlocale(LC_ALL, "ru");
 	std::ios_base::sync_with_stdio(0);
 
@@ -102,17 +96,21 @@ int main() {
 
 	arr_output(S, size);
 
+	HINSTANCE load;
+	load = LoadLibrary(L"dinlib.dll");
+	typedef long double (*min) (long double S[], long long int size);
+	min Min = (min)GetProcAddress(load, "Min");
+
 	std::cout << "\nНаименьший элемент данного массива равняется " << Min(S, size) << std::endl;
 
-
+	FreeLibrary(load);
+	
 	for (int i = 0; i < n; i++) {
 
 		delete arr[i];
 	}
 
 	delete[] arr;
-
-	FreeLibrary(load);
 
 	return 0;
 }
