@@ -47,7 +47,7 @@ int main() {
 
 			if (number == lenght_delete) {
 				for (start; start <= stop; start++) {
-					text[start] = '~';
+					text[start] = '\n';
 				}
 			}
 		}
@@ -60,7 +60,7 @@ int main() {
 	std::cout << "Строка после удаления слов: ";
 
 	for (int i = 0; i < lenght_text; i++) {
-		if (text[i] != '~') {
+		if (text[i] != '\n') {
 			std::cout << text[i];
 		}
 	}
