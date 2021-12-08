@@ -28,7 +28,6 @@ double input() {
 	}
 
 	return x;
-
 }
 
 int text_int(char* text,int lenght_text) {
@@ -70,10 +69,10 @@ int text_int(char* text,int lenght_text) {
 }
 
 void int_text(int x) {
-	int power = 1;
+	int power = 0;
 	int start = 0;
 
-	while (abs(x) / pow(10, power) > 1)
+	while (abs(x) / pow(10, power) >= 1)
 		power++;
 
 	int lenght = (x > 0) ? power : power + 1;
@@ -148,7 +147,6 @@ double text_double(char* text, int lenght_text) {
 		answer *= -1;
 
 	return answer;
-
 }
 
 void doub_text(double x) {
@@ -156,16 +154,17 @@ void doub_text(double x) {
 	double doub = abs(x) - integer;
 	int count_doub = 0;
 
-	int power = 2;
+	int power = 0;
 	int start = 0;
 
 	while ((doub * pow(10, count_doub) != int(doub * pow(10, count_doub))) && count_doub < 6)
 		count_doub++;
 
-	while (abs(x) / pow(10, power) > 1)
+	while (abs(x) / pow(10, power) >= 1)
 		power++;
 
 	int lenght = (x > 0) ? power : power + 1;
+	lenght += 1;
 
 	char* text = new char[(lenght + count_doub + 1) * sizeof(char)];
 	text[lenght + count_doub] = '\0';
@@ -173,12 +172,10 @@ void doub_text(double x) {
 	if (x < 0)
 		text[start++] = '-';
 
-	for (start; start < lenght; start++)
+	for (start; start < lenght-1; start++)
 		text[start] = int(abs(integer) / pow(10, --power)) % 10 + '0';
 
-	text[start++] = '.';
-
-	
+	text[start++] = '.';	
 
 	for (int step = 1; start < count_doub+lenght; start++, step++)
 		text[start] = int(doub * pow(10, step)) % 10 + '0';
