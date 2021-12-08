@@ -42,4 +42,5 @@ int main() {
 	else
 		std::cout << str.length() << std::endl;
 
+	return 0;
 }

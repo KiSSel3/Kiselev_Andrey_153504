@@ -1,73 +1,74 @@
 #include <iostream>
 
+int exp(int x) {
+	if (x == 0)
+		return 1;
+	else
+		return 10 * exp(x - 1);
+}
+
 int main() {
 
 	setlocale(LC_ALL, "ru");
 
-	char line[80];
+	char word[81] = { '\0' };
 	int start = 0, stop = 0, num = 0;
 
-	std::cin >> line;
-	std::cout << line << std::endl;
+	std::cout << "Введите строку, в которой вы хотите найти число с плавающей точкой: ";
+
+	int i = 0;
+	for (i; ('\n' - (word[i] = getchar()))&&i<=80; i++);
+		
+	while (i>80) {
+		std::cin.clear();
+		std::cin.ignore(99999, '\n');
+		std::cout << "Ошибка!Попробуйте ввести другие данные: ";
+
+		i = 0;
+		for (i; ('\n' - (word[i] = getchar())) && i <= 80; i++);
+	}
 
 	/*		  ASCII
 		48 - 57  --> 0-9
 	*/
+	
+	int count = 0;
+	bool minus = false;
+	bool end = false;
+	long double number = 0;
 
-	bool yes = true;
-	bool not_int = false;
-	int dot = 0, minus = 0;
+	while (count < 80 && word[count] != '\0'&&!end) {
+		if (word[count]>=48&& word[count] <= 57) {
+			if (count > 0 && word[count - 1] == '-')
+				minus = true;
 
-	do {
+			number = word[count++] - '0';
 
-		if (yes && ((line[num] >= 48 && line[num] <= 57) || (line[num] == '-' && (line[num + 1] >= 48 && line[num + 1] <= 57)))) {
+			while (word[count] >= 48 && word[count] <= 57)
+				number = number * 10 + word[count++] - '0';
 
-			start = num;
-			yes = false;
+			if (word[count] == '.' && (word[count+1] >= 48 && word[count+1] <= 57)) {
+				count++;
+				for (int i = 1; (word[count] >= 48 && word[count] <= 57); i++)
+					number += double(word[count++] - '0') / exp(i);						
+			}
+
+			if (minus)
+				number *= -1;
+
+			if (int(number) != number)
+				end = true;
 		}
 
-		if (line[num] == '.'&&!yes) {
-
-			not_int = true;
-			dot++;
-		}
-
-		if (line[num] == '-') {
-
-			minus++;
-		}
-
-		if (minus != 0 && minus != 1) {
-
-			start = num;
-			minus = 0;
-		}
-		
-		if ((line[num] < 48 || line[num] > 57) && !yes &&start!=num && line[num] != '.') {
-
-			stop = num;
-			yes = true;
-
-			if (not_int && dot == 1) break;
-			dot = 0;
-			stop = start;
-		}
-
-	} while (line[num++] != '\0');
-
-	if (stop-start>0) {
-
-		for (int i = start; i <= stop - 1; i++) {
-
-			std::cout << line[i];
-		}
-	}
-	else {
-
-		std::cout << "В данной строке нет вещественного числа!";
+		count++;
 	}
 
-	std::cout << std::endl;
+	if (!end)
+		std::cout << "\nВ данной строке нет числа с плавающей точкой!\n";
+	else
+		std::cout << "Первое найденное число с плавающей точкой в заданной строке: "<<number;
+
+	putchar('\n');
 
 	return 0;
 }
