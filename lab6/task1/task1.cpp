@@ -1,4 +1,14 @@
+// Лабораторная 6, задача 1. Выполнена: Киселёв А.В 153504
+
+/*При выполнении задания предусмотреть возможность ввода текста с
+клавиатуры. При работе с текстом использовать строки длиной не более 80-
+ти символов. Исходный текст и полученный результат вывести на экран. 
+8. Из строки, состоящей из букв, цифр, запятых, точек, знаков + и – , выделить
+подстроку, задающую вещественное число с плавающей точкой.*/
+
 #include <iostream>
+
+
 
 int exp(int x) {
 	if (x == 0)
@@ -37,8 +47,8 @@ int main() {
 	bool end = false;
 	long double number = 0;
 
-	while (count < 80 && word[count] != '\0'&&!end) {
-		if (word[count]>=48&& word[count] <= 57) {
+	while (count < 80 && word[count] != '\0' && !end) {
+		if (word[count] >= 48 && word[count] <= 57) {
 			if (count > 0 && word[count - 1] == '-')
 				minus = true;
 
@@ -47,10 +57,10 @@ int main() {
 			while (word[count] >= 48 && word[count] <= 57)
 				number = number * 10 + word[count++] - '0';
 
-			if (word[count] == '.' && (word[count+1] >= 48 && word[count+1] <= 57)) {
+			if (word[count] == '.' && (word[count + 1] >= 48 && word[count + 1] <= 57)) {
 				count++;
 				for (int i = 1; (word[count] >= 48 && word[count] <= 57); i++)
-					number += double(word[count++] - '0') / exp(i);						
+					number += double(word[count++] - '0') / exp(i);
 			}
 
 			if (minus)
@@ -66,8 +76,7 @@ int main() {
 	if (!end)
 		std::cout << "\nВ данной строке нет числа с плавающей точкой!\n";
 	else
-		std::cout << "Первое найденное число с плавающей точкой в заданной строке: "<<number;
-
+		std::cout << "Первое найденное число с плавающей точкой в заданной строке: " << number;
 	putchar('\n');
 
 	return 0;

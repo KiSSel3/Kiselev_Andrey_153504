@@ -1,6 +1,69 @@
 #include "pch.h"
 #include <string>
 
+//test 2
+int exp(int x) {
+    if (x == 0)
+        return 1;
+    else
+        return 10 * exp(x - 1);
+}
+
+
+//task 2
+//std::string delete_char(char* text)
+// {
+//  int  lenght_text = 3;
+//    int lenght_delete = 1;
+//    bool space = true, str = false;
+//    int start = 0, stop = 0, number = 0;
+//
+//    for (int i = 0; i <= lenght_text; i++) {
+//        if (space && (text[i] != 65 && text[i] != 69 && text[i] != 73 && text[i] != 79 && text[i] != 85 && text[i] != 89 && text[i] != 97 && text[i] != 101 && text[i] != 105 && text[i] != 111 && text[i] != 117 && text[i] != 121)) {
+//            start = i;
+//            str = true;
+//            space = false;
+//            number = 0;
+//        }
+//
+//        if (text[i] == ' ' || lenght_text == i) {
+//            space = true;
+//
+//            stop = i;
+//
+//            if (number == lenght_delete) {
+//                for (start; start <= stop; start++) {
+//                    text[start] = '~';
+//                }
+//            }
+//        }
+//
+//        if (str) {
+//            number++;
+//        }
+//    }
+//
+//    std::string strrr;
+//
+//    std::cout << "Строка после удаления слов: ";
+//
+//    int i = 0;
+//
+//   /* for (i; i < lenght_text; i++) {
+//        if (text[i] != '~') {
+//            strrr[i] == text[i];
+//        }
+//    }*/
+//
+//    strrr = "qqq";
+//
+//    strrr[3] = '\0';
+//    
+//
+//    return "qqq";
+//
+//}
+
 // TASK 4
 
 std::string translate(std::string str) {
@@ -296,6 +359,82 @@ double sum(std::string word) {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //TASK 4
+
+int expp(int x) {
+    if (x == 0)
+        return 1;
+    else
+        return 10 * exp(x - 1);
+}
+
+int text_int(char* text, int lenght_text) {
+    if (lenght_text > 10) {
+        std::cout << "\nЧисло слишком большое!\n";
+        return 0;
+    }
+
+    bool error = false;
+    bool minus = false;
+
+    int start = (text[0] == '-' || text[0] == '+') ? 1 : 0;
+    int answer = 0;
+
+    for (int i = start; i < lenght_text; i++) {
+        if (text[i] < 48 || text[i] > 57) {
+            error = true;
+            break;
+        }
+    }
+
+    if (error) {
+        std::cout << "Вы ввели не целое число!\n";
+        return 0;
+    }
+
+    if (text[0] == '-')
+        minus = true;
+
+    answer = text[start] - '0';
+
+    for (int i = start + 1; i < lenght_text; i++)
+        answer = answer * 10 + text[i] - '0';
+
+    if (minus)
+        answer *= -1;
+
+    return answer;
+}
+
+TEST(test1_1, task1) {
+
+    EXPECT_EQ(100, exp(2));
+    EXPECT_TRUE(true);
+}
+
+TEST(test1_1, task3) {
+
+    EXPECT_EQ(1, text_int("1",1));
+    EXPECT_TRUE(true);
+}
+
+
+TEST(test1_1, task2) {
+
+    EXPECT_EQ(100, expp(2));
+    EXPECT_TRUE(true);
+}
+
+TEST(test1_2, task2) {
+
+    EXPECT_EQ(10, exp(1));
+    EXPECT_TRUE(true);
+}
+
+TEST(test1_2, task1) {
+
+    EXPECT_EQ(10, exp(1));
+    EXPECT_TRUE(true);
+}
 
 TEST(test1_4, task4) {
 
