@@ -1,0 +1,22 @@
+# ninja log v5
+4	3443	6703649866446885	D:/Programming/QtLabs/lab1/build-task-1-5-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/task-1-5_autogen/timestamp	9977127373d28204
+4	3443	6703649866446885	task-1-5_autogen/timestamp	9977127373d28204
+3450	14335	6703649980180619	CMakeFiles/task-1-5.dir/task-1-5_autogen/mocs_compilation.cpp.obj	7fc039f3db918aa0
+4	3443	6703649866446885	task-1-5_autogen/mocs_compilation.cpp	9977127373d28204
+4	3443	6703649866446885	D:/Programming/QtLabs/lab1/build-task-1-5-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/task-1-5_autogen/mocs_compilation.cpp	9977127373d28204
+3445	7126	6703649907286190	CMakeFiles/task-1-5.dir/main.cpp.obj	7048fc0718dbcc9c
+3455	14291	6703649979555809	CMakeFiles/task-1-5.dir/mainwindow.cpp.obj	4bc017822088261
+14336	15372	6703649990518628	task-1-5.exe	19b10d4f4ac805d9
+9	3781	6703650924148393	build.ninja	5b1774f48a9d24f6
+24	2827	6703650930518603	task-1-5_autogen/timestamp	9977127373d28204
+24	2827	6703650930518603	task-1-5_autogen/mocs_compilation.cpp	9977127373d28204
+24	2827	6703650930518603	D:/Programming/QtLabs/lab1/build-task-1-5-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/task-1-5_autogen/timestamp	9977127373d28204
+24	2827	6703650930518603	D:/Programming/QtLabs/lab1/build-task-1-5-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/task-1-5_autogen/mocs_compilation.cpp	9977127373d28204
+2828	3156	6703650958496148	CMakeFiles/task-1-5.dir/task-1-5_autogen/mocs_compilation.cpp.obj	7fc039f3db918aa0
+3157	3724	6703650963760303	task-1-5.exe	f604e39ee4177643
+28	1044	6703651531095758	task-1-5_autogen/timestamp	9977127373d28204
+28	1044	6703651531095758	task-1-5_autogen/mocs_compilation.cpp	9977127373d28204
+28	1044	6703651531095758	D:/Programming/QtLabs/lab1/build-task-1-5-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/task-1-5_autogen/timestamp	9977127373d28204
+28	1044	6703651531095758	D:/Programming/QtLabs/lab1/build-task-1-5-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/task-1-5_autogen/mocs_compilation.cpp	9977127373d28204
+1048	2788	6703651548072831	CMakeFiles/task-1-5.dir/main.cpp.obj	7048fc0718dbcc9c
+2789	3416	6703651553963192	task-1-5.exe	f604e39ee4177643

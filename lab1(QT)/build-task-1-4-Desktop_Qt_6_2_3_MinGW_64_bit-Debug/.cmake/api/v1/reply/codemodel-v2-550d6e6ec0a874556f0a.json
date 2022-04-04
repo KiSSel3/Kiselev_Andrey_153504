@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "task-1-4",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "task-1-4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-task-1-4-Debug-eb7c2648f0fd6992f5b8.json",
+					"name" : "task-1-4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "task-1-4_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-task-1-4_autogen-Debug-fa492173f96f385f3bd8.json",
+					"name" : "task-1-4_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "task-1-4_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-task-1-4_autogen_timestamp_deps-Debug-7e88f6c9bb7e98821f4d.json",
+					"name" : "task-1-4_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Programming/QtLabs/lab1/build-task-1-4-Desktop_Qt_6_2_3_MinGW_64_bit-Debug",
+		"source" : "D:/Programming/QtLabs/lab1/task-1-4"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

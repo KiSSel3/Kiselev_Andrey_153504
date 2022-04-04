@@ -1,0 +1,5 @@
+D:/Programming/QtLabs/lab1/build-task-1-5-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/CMakeFiles/task-1-5.dir
+D:/Programming/QtLabs/lab1/build-task-1-5-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+D:/Programming/QtLabs/lab1/build-task-1-5-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+D:/Programming/QtLabs/lab1/build-task-1-5-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/CMakeFiles/task-1-5_autogen_timestamp_deps.dir
+D:/Programming/QtLabs/lab1/build-task-1-5-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/CMakeFiles/task-1-5_autogen.dir
