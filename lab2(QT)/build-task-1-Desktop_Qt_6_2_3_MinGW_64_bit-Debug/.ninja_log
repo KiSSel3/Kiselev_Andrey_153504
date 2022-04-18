@@ -1,0 +1,16 @@
+# ninja log v5
+17	6598	6715762036868801	task-1_autogen/timestamp	bffb62b369773bff
+17	6598	6715762036868801	task-1_autogen/mocs_compilation.cpp	bffb62b369773bff
+17	6598	6715762036868801	D:/Programming/QtLabs/lab2/build-task-1-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/task-1_autogen/timestamp	bffb62b369773bff
+17	6598	6715762036868801	D:/Programming/QtLabs/lab2/build-task-1-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/task-1_autogen/mocs_compilation.cpp	bffb62b369773bff
+6613	20345	6715762183478797	CMakeFiles/task-1.dir/student.cpp.obj	8988a1a3f6c0fbd7
+6607	40518	6715762388388810	CMakeFiles/task-1.dir/main.cpp.obj	c242f00fa332fb98
+6601	40593	6715762389188816	CMakeFiles/task-1.dir/task-1_autogen/mocs_compilation.cpp.obj	d371e95f52c18e6b
+20351	46892	6715762453093333	CMakeFiles/task-1.dir/mainwindow.cpp.obj	6157bd66ff3fe3c9
+46896	48520	6715762469313314	task-1.exe	a8a462d01e601cf1
+13	1615	6716319891289528	task-1_autogen/timestamp	bffb62b369773bff
+13	1615	6716319891289528	task-1_autogen/mocs_compilation.cpp	bffb62b369773bff
+13	1615	6716319891289528	D:/Programming/QtLabs/lab2/build-task-1-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/task-1_autogen/timestamp	bffb62b369773bff
+13	1615	6716319891289528	D:/Programming/QtLabs/lab2/build-task-1-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/task-1_autogen/mocs_compilation.cpp	bffb62b369773bff
+1635	13962	6716320014565048	CMakeFiles/task-1.dir/mainwindow.cpp.obj	6157bd66ff3fe3c9
+13963	15024	6716320024776707	task-1.exe	a8a462d01e601cf1
