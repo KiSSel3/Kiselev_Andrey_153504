@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>595</width>
+    <height>510</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>532</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>    Input Text: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>Enter</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QTextBrowser" name="textBrowser"/>
+       </item>
+       <item>
+        <widget class="QTextBrowser" name="textBrowser_2"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="1" column="0">
+          <widget class="QLineEdit" name="lineEdit_2"/>
+         </item>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pushButton_17">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QPushButton" name="pushButton_5">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;char * strcat( char * destptr, const char * srcptr );&lt;/p&gt;&lt;p&gt;Объединение строк. Функция добавляет копию строки &lt;span style=&quot; font-family:'Courier New';&quot;&gt;srcptr&lt;/span&gt; в конец строки &lt;span style=&quot; font-family:'Courier New';&quot;&gt;destptr&lt;/span&gt;. Нулевой символ конца строки &lt;span style=&quot; font-family:'Courier New';&quot;&gt;destptr&lt;/span&gt; заменяется первым символом строки &lt;span style=&quot; font-family:'Courier New';&quot;&gt;srcptr&lt;/span&gt;, и новый нуль-символ добавляется в конец уже новой строки, сформированной объединением символов двух строк в строке &lt;span style=&quot; font-family:'Courier New';&quot;&gt;destptr&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;char * strcat( char * destptr, const char * srcptr );&lt;/p&gt;&lt;p&gt;Объединение строк. Функция добавляет копию строки &lt;span style=&quot; font-family:'Courier New';&quot;&gt;srcptr&lt;/span&gt; в конец строки &lt;span style=&quot; font-family:'Courier New';&quot;&gt;destptr&lt;/span&gt;. Нулевой символ конца строки &lt;span style=&quot; font-family:'Courier New';&quot;&gt;destptr&lt;/span&gt; заменяется первым символом строки &lt;span style=&quot; font-family:'Courier New';&quot;&gt;srcptr&lt;/span&gt;, и новый нуль-символ добавляется в конец уже новой строки, сформированной объединением символов двух строк в строке &lt;span style=&quot; font-family:'Courier New';&quot;&gt;destptr&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>strcat</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QPushButton" name="pushButton_10">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;char * strtok( char * string, const char * delim );&lt;/p&gt;&lt;p&gt;Функция &lt;span style=&quot; font-family:'Courier New';&quot;&gt;strtok&lt;/span&gt; выполняет поиск лексем в строке &lt;span style=&quot; font-family:'Courier New';&quot;&gt;string&lt;/span&gt;. Последовательность вызовов этой функции разбивают строку &lt;span style=&quot; font-family:'Courier New';&quot;&gt;string&lt;/span&gt; на лексемы, которые представляют собой последовательности символов, разделенных символами разделителями.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;char * strtok( char * string, const char * delim );&lt;/p&gt;&lt;p&gt;Функция &lt;span style=&quot; font-family:'Courier New';&quot;&gt;strtok&lt;/span&gt; выполняет поиск лексем в строке &lt;span style=&quot; font-family:'Courier New';&quot;&gt;string&lt;/span&gt;. Последовательность вызовов этой функции разбивают строку &lt;span style=&quot; font-family:'Courier New';&quot;&gt;string&lt;/span&gt; на лексемы, которые представляют собой последовательности символов, разделенных символами разделителями.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>strtok</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="pushButton_18">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Courier New';&quot;&gt;char* strcpy( char* destptr, constchar* srcptr );&lt;br/&gt;&lt;/span&gt;Функция копирует Си-строку &lt;span style=&quot; font-family:'Courier New';&quot;&gt;srcptr&lt;/span&gt;, включая завершающий нулевой символ в строку назначения, на которую ссылается указатель &lt;span style=&quot; font-family:'Courier New';&quot;&gt;destptr&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Courier New';&quot;&gt;char&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New';&quot;&gt;* strcpy( char&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New';&quot;&gt;* destptr, const&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New';&quot;&gt;char&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New';&quot;&gt;* srcptr );&lt;br/&gt;&lt;/span&gt;Функция копирует Си-строку &lt;span style=&quot; font-family:'Courier New';&quot;&gt;srcptr&lt;/span&gt;, включая завершающий нулевой символ в строку назначения, на которую ссылается указатель &lt;span style=&quot; font-family:'Courier New';&quot;&gt;destptr&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>strcpy</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="pushButton_12">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;size_t strlen( const char * string );&lt;br/&gt;Длина Си-строки определяется по достижению нулевого символа  — нуль терминатор. Функция &lt;span style=&quot; font-family:'Courier New';&quot;&gt;strlen&lt;/span&gt; видит начало Си-строки  и начинает сначала считать количество символов (байтов, отводимых под каждый символ), этот процесс выполняется до тех пор, пока не будет достигнут завершающий нулевой символ.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;size_t strlen( const char * string );&lt;br/&gt;Длина Си-строки определяется по достижению нулевого символа  — нуль терминатор. Функция &lt;span style=&quot; font-family:'Courier New';&quot;&gt;strlen&lt;/span&gt; видит начало Си-строки  и начинает сначала считать количество символов (байтов, отводимых под каждый символ), этот процесс выполняется до тех пор, пока не будет достигнут завершающий нулевой символ.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>strlen</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="pushButton_6">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;int strcmp( const char * string1, const char * string2 );&lt;/p&gt;&lt;p&gt;Эта функция сравнивает символы двух строк, &lt;span style=&quot; font-family:'Courier New';&quot;&gt;string1&lt;/span&gt; и &lt;span style=&quot; font-family:'Courier New';&quot;&gt;string2&lt;/span&gt;. Начиная с первых символов функция &lt;span style=&quot; font-family:'Courier New';&quot;&gt;strcmp&lt;/span&gt; сравнивает поочередно каждую пару символов, и продолжается это до тех пор, пока не будут найдены различные символы или не будет достигнут конец строки.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;int strcmp( const char * string1, const char * string2 );&lt;/p&gt;&lt;p&gt;Эта функция сравнивает символы двух строк, &lt;span style=&quot; font-family:'Courier New';&quot;&gt;string1&lt;/span&gt; и &lt;span style=&quot; font-family:'Courier New';&quot;&gt;string2&lt;/span&gt;. Начиная с первых символов функция &lt;span style=&quot; font-family:'Courier New';&quot;&gt;strcmp&lt;/span&gt; сравнивает поочередно каждую пару символов, и продолжается это до тех пор, пока не будут найдены различные символы или не будет достигнут конец строки.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>strcmp</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QPushButton" name="pushButton_8">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;int strcmp( const char * string1, const char * string2 );&lt;/p&gt;&lt;p&gt;Эта функция сравнивает символы двух строк, &lt;span style=&quot; font-family:'Courier New';&quot;&gt;string1&lt;/span&gt; и &lt;span style=&quot; font-family:'Courier New';&quot;&gt;string2&lt;/span&gt;. Начиная с первых символов функция &lt;span style=&quot; font-family:'Courier New';&quot;&gt;strcmp&lt;/span&gt; сравнивает поочередно каждую пару символов, и продолжается это до тех пор, пока не будут найдены различные символы или не будет достигнут конец строки.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;int strcoll( const char * string1, const char * string2 );&lt;/p&gt;&lt;p&gt;Функция сравнивает строку &lt;span style=&quot; font-family:'Courier New';&quot;&gt;string1&lt;/span&gt; со строкой &lt;span style=&quot; font-family:'Courier New';&quot;&gt;string2&lt;/span&gt;, с учётом параметра &lt;span style=&quot; font-family:'Courier New';&quot;&gt;LC_COLLATE&lt;/span&gt;, текущей локали.&lt;br/&gt;Эта функция сравнивает символы каждой строки, начиная с первого. Если символы равны сравнение продолжится уже со следующей парой символов и так до тех пор, пока не будут найдены различные символы или не будет найден нулевой символ, сигнализирующий о конце строки.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>strcoll</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPushButton" name="pushButton_21">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QPushButton" name="pushButton_22">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QPushButton" name="pushButton_23">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLineEdit" name="lineEdit_4"/>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;char * strncpy( char * destptr, const char * srcptr, size_t num );&lt;/p&gt;&lt;p&gt;Функция копирует первые &lt;span style=&quot; font-family:'Courier New';&quot;&gt;num&lt;/span&gt; символов из строки &lt;span style=&quot; font-family:'Courier New';&quot;&gt;srcptr&lt;/span&gt; в строку &lt;span style=&quot; font-family:'Courier New';&quot;&gt;destptr&lt;/span&gt;. Если конец строки &lt;span style=&quot; font-family:'Courier New';&quot;&gt;srcptr&lt;/span&gt; (символ конца строки ) достигнут прежде, чем были скопированы &lt;span style=&quot; font-family:'Courier New';&quot;&gt;num&lt;/span&gt; символов, к скопированным символам в конец строки &lt;span style=&quot; font-family:'Courier New';&quot;&gt;destptr&lt;/span&gt; добавляется нуль-символ, после чего, строка считается скопированной.&lt;/p&gt;&lt;p&gt;Если же строка назначения окажется меньше &lt;span style=&quot; font-family:'Courier New';&quot;&gt;num&lt;/span&gt;, тогда скопируются символы, которые поместятся в &lt;span style=&quot; font-family:'Courier New';&quot;&gt;destptr&lt;/span&gt;, учитывая то, что в конце строки обязательно должен стоять символ конца строки.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;char * strncpy( char * destptr, const char * srcptr, size_t num );&lt;/p&gt;&lt;p&gt;Функция копирует первые &lt;span style=&quot; font-family:'Courier New';&quot;&gt;num&lt;/span&gt; символов из строки &lt;span style=&quot; font-family:'Courier New';&quot;&gt;srcptr&lt;/span&gt; в строку &lt;span style=&quot; font-family:'Courier New';&quot;&gt;destptr&lt;/span&gt;. Если конец строки &lt;span style=&quot; font-family:'Courier New';&quot;&gt;srcptr&lt;/span&gt; (символ конца строки ) достигнут прежде, чем были скопированы &lt;span style=&quot; font-family:'Courier New';&quot;&gt;num&lt;/span&gt; символов, к скопированным символам в конец строки &lt;span style=&quot; font-family:'Courier New';&quot;&gt;destptr&lt;/span&gt; добавляется нуль-символ, после чего, строка считается скопированной.&lt;/p&gt;&lt;p&gt;Если же строка назначения окажется меньше &lt;span style=&quot; font-family:'Courier New';&quot;&gt;num&lt;/span&gt;, тогда скопируются символы, которые поместятся в &lt;span style=&quot; font-family:'Courier New';&quot;&gt;destptr&lt;/span&gt;, учитывая то, что в конце строки обязательно должен стоять символ конца строки.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>strncpy</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;char *strncat(char *str1, const char *str2, size_t count)&lt;/p&gt;&lt;p&gt;Функция strncat() добавляет к строке, на которую указывает str1, не более count символов из строки, на которую указывает str2. В конце модифицированной строки str1 функция ставит нуле­вой символ. Нулевой символ, первоначально завершавший строку str1, замещается первым симво­лом строки str2. Строка str2 остается в первоначальном виде.Функция strncat() возвращает указатель str1.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;char *strncat(char *str1, const char *str2, size_t count)&lt;/p&gt;&lt;p&gt;Функция strncat() добавляет к строке, на которую указывает str1, не более count символов из строки, на которую указывает str2. В конце модифицированной строки str1 функция ставит нуле­вой символ. Нулевой символ, первоначально завершавший строку str1, замещается первым симво­лом строки str2. Строка str2 остается в первоначальном виде.Функция strncat() возвращает указатель str1.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>strncat</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QPushButton" name="pushButton_14">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;int memcmp(const void *buf1, const void *buf2, size_t count)&lt;/p&gt;&lt;p&gt;Функция memcmp() сравнивает первые count символов массивов, на которые указывают buf1 и buf2. Сравнение производится лексикографически. Функция memcmp() возвращает целое число&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;int memcmp(const void *buf1, const void *buf2, size_t count)&lt;/p&gt;&lt;p&gt;Функция memcmp() сравнивает первые count символов массивов, на которые указывают buf1 и buf2. Сравнение производится лексикографически. Функция memcmp() возвращает целое число&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>memcmp</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QPushButton" name="pushButton_16">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;void * memcpy( void * destptr, const void * srcptr, size_t num );&lt;/p&gt;&lt;p&gt;Функция &lt;span style=&quot; font-family:'Courier New';&quot;&gt;memcpy&lt;/span&gt; копирует &lt;span style=&quot; font-family:'Courier New';&quot;&gt;num&lt;/span&gt; байтов первого блока памяти, на который ссылается указатель &lt;span style=&quot; font-family:'Courier New';&quot;&gt;srcptr&lt;/span&gt;, во второй блок памяти, на который ссылается указатель &lt;span style=&quot; font-family:'Courier New';&quot;&gt;destptr&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;void * memcpy( void * destptr, const void * srcptr, size_t num );&lt;/p&gt;&lt;p&gt;Функция &lt;span style=&quot; font-family:'Courier New';&quot;&gt;memcpy&lt;/span&gt; копирует &lt;span style=&quot; font-family:'Courier New';&quot;&gt;num&lt;/span&gt; байтов первого блока памяти, на который ссылается указатель &lt;span style=&quot; font-family:'Courier New';&quot;&gt;srcptr&lt;/span&gt;, во второй блок памяти, на который ссылается указатель &lt;span style=&quot; font-family:'Courier New';&quot;&gt;destptr&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>memcpy</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QPushButton" name="pushButton_11">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;char *strerror(int num)&lt;/p&gt;&lt;p&gt;Функция strerror() возвращает указатель на сообщение об ошибке, связанное с номером ошибки.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;char *strerror(int num)&lt;/p&gt;&lt;p&gt;Функция strerror() возвращает указатель на сообщение об ошибке, связанное с номером ошибки.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>strerror</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="pushButton_13">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Courier New';&quot;&gt;void* memset( void* memptr, intval, size_tnum );&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Функция &lt;span style=&quot; font-family:'Courier New';&quot;&gt;memset&lt;/span&gt; заполняет &lt;span style=&quot; font-family:'Courier New';&quot;&gt;num&lt;/span&gt; байтов блока памяти, через указатель &lt;span style=&quot; font-family:'Courier New';&quot;&gt;memptr&lt;/span&gt;. Код заполняемого символа передаётся в функцию через параметр &lt;span style=&quot; font-family:'Courier New';&quot;&gt;val&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Courier New';&quot;&gt;void&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New';&quot;&gt;* memset( void&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New';&quot;&gt;* memptr, int&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New';&quot;&gt;val, size_t&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New';&quot;&gt;num );&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Функция &lt;span style=&quot; font-family:'Courier New';&quot;&gt;memset&lt;/span&gt; заполняет &lt;span style=&quot; font-family:'Courier New';&quot;&gt;num&lt;/span&gt; байтов блока памяти, через указатель &lt;span style=&quot; font-family:'Courier New';&quot;&gt;memptr&lt;/span&gt;. Код заполняемого символа передаётся в функцию через параметр &lt;span style=&quot; font-family:'Courier New';&quot;&gt;val&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>memset</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pushButton_7">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;int strncmp( const char * string1, const char * string2, size_t num );&lt;/p&gt;&lt;p&gt;Функция сравнивает первые &lt;span style=&quot; font-family:'Courier New';&quot;&gt;num&lt;/span&gt; символов строки &lt;span style=&quot; font-family:'Courier New';&quot;&gt;string1&lt;/span&gt; с первыми &lt;span style=&quot; font-family:'Courier New';&quot;&gt;num&lt;/span&gt; символами строки &lt;span style=&quot; font-family:'Courier New';&quot;&gt;string2&lt;/span&gt;.&lt;br/&gt;Эта функция начинает сравнивать первый символ каждой строки. Если они равны, &lt;span style=&quot; font-family:'Courier New';&quot;&gt;strncmp&lt;/span&gt; продолжает сравнивать  следующие пары символов, пока не будут найдены различные символы или пока не будет достигнут конец строки.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;int strncmp( const char * string1, const char * string2, size_t num );&lt;/p&gt;&lt;p&gt;Функция сравнивает первые &lt;span style=&quot; font-family:'Courier New';&quot;&gt;num&lt;/span&gt; символов строки &lt;span style=&quot; font-family:'Courier New';&quot;&gt;string1&lt;/span&gt; с первыми &lt;span style=&quot; font-family:'Courier New';&quot;&gt;num&lt;/span&gt; символами строки &lt;span style=&quot; font-family:'Courier New';&quot;&gt;string2&lt;/span&gt;.&lt;br/&gt;Эта функция начинает сравнивать первый символ каждой строки. Если они равны, &lt;span style=&quot; font-family:'Courier New';&quot;&gt;strncmp&lt;/span&gt; продолжает сравнивать  следующие пары символов, пока не будут найдены различные символы или пока не будет достигнут конец строки.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>strncmp</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="pushButton_9">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;size_t *strxfrm(char *dest, const char *source, size_t count)&lt;/p&gt;&lt;p&gt;Функция strxfrm() используется для копирования до count символов содержимого строки, на которую указывает source, в строку, на которую указывает dest. Аргумент source должен быть указателем на строку, оканчивающуюся нулевым символом. В процессе копирования любые национальные символы преобразуются в формат, характерный для конкретной страны. Функция strncpy() возвращает указатель на dest. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;size_t *strxfrm(char *dest, const char *source, size_t count)&lt;/p&gt;&lt;p&gt;Функция strxfrm() используется для копирования до count символов содержимого строки, на которую указывает source, в строку, на которую указывает dest. Аргумент source должен быть указателем на строку, оканчивающуюся нулевым символом. В процессе копирования любые национальные символы преобразуются в формат, характерный для конкретной страны. Функция strncpy() возвращает указатель на dest. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>strxfrm</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QPushButton" name="pushButton_15">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;void *memmove(void *dest, const void *source, size_t count)&lt;/p&gt;&lt;p&gt;Функция memmove() копирует count символов из массива, на который указывает source, в мас­сив, на который указывает dest.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="whatsThis">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;void *memmove(void *dest, const void *source, size_t count)&lt;/p&gt;&lt;p&gt;Функция memmove() копирует count символов из массива, на который указывает source, в мас­сив, на который указывает dest.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>memmove</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPushButton" name="pushButton_19">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QPushButton" name="pushButton_20">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>595</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
