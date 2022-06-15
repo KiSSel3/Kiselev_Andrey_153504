@@ -1,106 +1,77 @@
-#ifndef STACK_H
-#define STACK_H
+#ifndef Stack_H
+#define Stack_H
 #include <iostream>
 
 template <class T>
 class Stack {
-private:
-    T* stack = nullptr;
-    size_t size;
-    size_t capacity;
-    
+    struct Node {
+        Node *prev = nullptr;
+        T data;
+    };
 public:
-    Stack(size_t capacity = 20) {
-        this->capacity = capacity;
-        size = 0;
-        
-        stack = new T[capacity];
-    }
-    
-    Stack(Stack<T>& other){
-        if(stack){
-            delete[] stack;
-        }
+    Node *TopElem;
+    size_t size;
 
-        stack = new T[other.capacity];
-        for(size_t i = 0;i<other.capacity;++i){
-            stack[i] = other.stack[i];
-        }
+    Stack(): size(0) {TopElem = new Node();}
 
-        size = other.size;
-        capacity = other.capacity;
-    }
-    
-    Stack<T>& operator=(Stack<T>& other){
-        if(stack){
-            delete[] stack;
-        }
+    ~Stack() { }
 
-        stack = new T[other.capacity];
-        for(size_t i = 0;i<other.capacity;++i){
-            stack[i] = other.stack[i];
-        }
-
-        size = other.size;
-        capacity = other.capacity;
-
-        return *this;
-    }
-
-    ~Stack(){
-        if(stack){
-            delete[] stack;
-        }
-    }
-
-    size_t Size(){
+    size_t Size() {
         return size;
     }
 
-    bool Empty(){
-        if(size){
+    const bool Empty() {
+        if (size) {
             return false;
-        }
-        else{
+        } else {
             return true;
         }
     }
 
-    T& Top(){
-        if(!Empty()){
-            return stack[size - 1];
-        }
-        else{
-            return stack[0];
+    T Top() {
+        if (size) {
+            return TopElem->prev->data;
         }
     }
 
     void Pop() {
-        if(size){
+        if (size > 1) {
+            TopElem = TopElem->prev;
+            --size;
+        } else if (size == 1) {
+            TopElem = new Node();
             --size;
         }
-        else {
-            return;
-        }
     }
 
-    void Push(T& value){
-        if(size == capacity){
-            T* newStack = new T[capacity*2];
-            for(size_t i = 0; i < capacity; ++i){
-                newStack[i] = stack[i];
-            }
-            newStack[capacity] = value;
+    void Push(T value) {
+        TopElem->data = value;
+        Node* buff = new Node();
+        buff->prev = TopElem;
+        TopElem = buff;
+        ++size;
+    }
 
-            capacity *= 2;
-            size += 1;
+    Stack<T>& operator=(Stack<T> &stack) {
+        Stack *buff = new Stack();
 
-            delete[] stack;
-            stack = newStack;
+        while (!stack.Empty()) {
+            buff->Push(stack.Top());
+            stack.Pop();
         }
-        else{
-            stack[size++] = value;
+
+        while (!Empty()) {
+            Pop();
         }
+
+        while (!buff->Empty()) {
+            Push(buff->Top());
+            stack.Push(buff->Top());
+            buff->Pop();
+        }
+
+        return *this;
     }
 };
-#endif // STACK_H
+
+#endif // Stack_H
